@@ -1,0 +1,4 @@
+.env
+/Virtual Environment v3.13/
+__pycache__/
+*.pyc
