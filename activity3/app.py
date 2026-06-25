@@ -22,8 +22,7 @@ def simulated_react_agent(user_query):
         config={"system_instruction": react_identity},
         contents=user_query
     )
-    # ... logic continues in next step
-    
+
     if "TOOL:" in response.text:
         tool_call = response.text.split("TOOL:")[1].strip()
         print(f"[ACTION] Agent requested tool: {tool_call}")
